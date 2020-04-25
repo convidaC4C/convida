@@ -14,7 +14,7 @@
 ## Within the next months we are proposing:
 - [ ] Add new tests to identify the level of stress.
 - [ ] Diagnose the kind of stress of the user and give them treatment.
-- [ ] Implement mobile apps.
+- [ ] Implement app in mobile devices.
 
  ## Long term targets:
  
