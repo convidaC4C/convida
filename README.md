@@ -19,7 +19,7 @@ ConVIDA is designed using XX components:
 3. Watson Assistant
 4. Cloudant
 
-## How to implement Convida
+## How to implement ConVIDA
 
 <<<<<<<<<< Explanation >>>>>>
 
