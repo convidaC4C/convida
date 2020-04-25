@@ -25,6 +25,8 @@ ConVIDA is designed using XX components:
 
 ## Project roadmap
 
+<<<<<<<<<< Explanation >>>>>>
+
 ## ConVIDA Team
 * Daniel Franco Puntes 
 * Alicia Alvarez García 
