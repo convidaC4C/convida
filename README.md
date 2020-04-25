@@ -5,19 +5,19 @@ After COVID-19 crisis, we face a scenario never seen before, all of humanity has
 ## Technical solution
 
 ConVIDA is designed using XX components:
-1. Frontend
-2. Doc console
-3. Convida Dialog
-4. Database
+1. Frontend.
+2. Doc console.
+3. Convida Dialog.
+4. Database.
 
 <<<<<<<<<< Image >>>>>>>>>>>>
 
 ## Implemented with:
 
-1. Continuous delivery 
-2. Cloud Foundry app
-3. Watson Assistant
-4. Cloudant
+1. Continuous delivery. 
+2. Cloud Foundry app.
+3. Watson Assistant.
+4. Cloudant.
 
 ## How to implement ConVIDA
 
