@@ -14,18 +14,19 @@ ConVIDA is designed using XX components:
 
 ## Implemented with:
 
-1. Continuous delivery. 
+1. Node-Red.
 2. Cloud Foundry app.
 3. Watson Assistant.
-4. Cloudant.
+4. Cloudant database.
+5. Continous delivery.
 
 ## How to implement ConVIDA
 
-<<<<<<<<<< Explanation >>>>>>
+See [HOWTO.md](howto.md)
 
 ## Project roadmap
 
-<<<<<<<<<< Explanation >>>>>>
+See [ROADMAP.md](roadmap.md)
 
 ## ConVIDA Team
 * Daniel Franco Puntes 
