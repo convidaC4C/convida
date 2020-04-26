@@ -1,5 +1,7 @@
 # Roadmap
 
+![Convida roadmap](/roadmap.png)
+
 ## Convida at present:
 
 * Dialog with the user to do ASDS test.
