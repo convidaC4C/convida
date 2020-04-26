@@ -17,5 +17,5 @@
 - [ ] Identify users and relate their previous conversations.
 
  ## Long-term objectives:
- - [ ] Widen the range of diseases treated by the application
+ - [ ] Widen the range of diseases treated by the application.
  - [ ] Treat diseases through virtual healing dialogue.
