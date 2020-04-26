@@ -26,7 +26,7 @@ See [HOWTO.md](howto.md)
 
 ## Project roadmap
 
-See [ROADMAP.md](roadmap.md)
+See [ROADMAP.md](roadmap/roadmap.md)
 
 ## ConVIDA Team
 * Daniel Franco Puntes 
