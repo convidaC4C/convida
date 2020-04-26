@@ -1,6 +1,6 @@
 # Roadmap
 
-![Convida roadmap](/roadmap.png)
+![Convida roadmap](roadmap.png)
 
 ## Convida at present:
 
