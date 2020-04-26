@@ -10,7 +10,7 @@ ConVIDA is designed using XX components:
 3. Convida Dialog.
 4. Database.
 
-![Convida technical solution](/technical_solution/technical solution.PNG)
+![Convida technical solution](technical_solution/technical solution.PNG)
 
 ## Implemented with:
 
