@@ -21,7 +21,7 @@ ConVIDA is designed using XX components:
 
 ## How to implement ConVIDA
 
-See [HOWTO.md](howto.md)
+See [HOWTO.md](howto/howto.md)
 
 ## Project roadmap
 
