@@ -1,0 +1,1881 @@
+{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Dicotomic",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "later",
+            "after",
+            "nothing",
+            "then",
+            "without",
+            "eventually",
+            "late",
+            "afterward",
+            "thereafter",
+            "subsequently",
+            "never"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "ok",
+            "of course",
+            "okay",
+            "so",
+            "yeah",
+            "oh",
+            "yep",
+            "actually",
+            "alright",
+            "hmmm",
+            "maybe",
+            "hmm"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1587820087530",
+      "disabled": true,
+      "conditions": "$",
+      "dialog_node": "response_8_1587821703168"
+    },
+    {
+      "type": "standard",
+      "title": "Dicotomic",
+      "parent": "Welcome",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Dicotomic",
+      "dialog_node": "node_9_1587751510877"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752316899",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_4_1587817530168",
+      "previous_sibling": "handler_7_1587817528608"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you tried not to think about the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752316899",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1587752316906",
+      "previous_sibling": "handler_2_1587752316906"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752316899",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587817528608",
+      "previous_sibling": "handler_3_1587752316906"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752316899",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1587817544344",
+      "previous_sibling": "handler_4_1587817530168"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1587752316899",
+      "context": {
+        "Q10": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_2_1587752316906"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752367592",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1587817823959",
+      "previous_sibling": "handler_2_1587817823015"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752367592",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587817823015",
+      "previous_sibling": "handler_9_1587817822107"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you become jumpy since the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752367592",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1587752367596",
+      "previous_sibling": "handler_9_1587752367596"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752367592",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1587817822107",
+      "previous_sibling": "handler_8_1587752367596"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1587752367592",
+      "context": {
+        "Q18": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_9_1587752367596"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752272734",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587815470957",
+      "previous_sibling": "handler_5_1587815469829"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752272734",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1587815468701",
+      "previous_sibling": "handler_8_1587752272746"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752272734",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1587815469829",
+      "previous_sibling": "handler_3_1587815468701"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "During or after the trauma, did you ever feel unreal or dreamlike?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752272734",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1587752272746",
+      "previous_sibling": "handler_2_1587752272746"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1587752272734",
+      "context": {
+        "Q3": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_2_1587752272746"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1587752348631",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587817717289",
+      "previous_sibling": "handler_2_1587817716463"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1587752348631",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1587817715329",
+      "previous_sibling": "handler_10_1587752348636"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you felt more irritable since the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1587752348631",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1587752348636",
+      "previous_sibling": "handler_7_1587752348636"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1587752348631",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587817716463",
+      "previous_sibling": "handler_5_1587817715329"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587752348631",
+      "context": {
+        "Q15": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_7_1587752348636"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587751894984",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587810627162",
+      "previous_sibling": "handler_7_1587810618135"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587751894984",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1587810977297",
+      "previous_sibling": "handler_2_1587810627162"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "During or after the trauma, did you ever feel numb or distant from your emotions?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587751894984",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1587751895003",
+      "previous_sibling": "handler_6_1587751895003"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587751894984",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587810618135",
+      "previous_sibling": "handler_10_1587751895003"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587751894984",
+      "context": {
+        "Q1": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587751895003"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752355817",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_7_1587817770727",
+      "previous_sibling": "handler_1_1587817746659"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752355817",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1587817745587",
+      "previous_sibling": "handler_1_1587752355825"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1587752355817",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1587817746659",
+      "previous_sibling": "handler_9_1587817745587"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have you had difficulty concentrating since the trauma?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1587752355817",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587752355825",
+      "previous_sibling": "handler_8_1587752355825"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1587752355817",
+      "context": {
+        "Q16": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587752355825"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752335238",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1587817636084",
+      "previous_sibling": "handler_10_1587752335243"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752335238",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587817637225",
+      "previous_sibling": "handler_1_1587817636084"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you tried not to feel upset or distressed about the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752335238",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1587752335243",
+      "previous_sibling": "handler_6_1587752335243"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752335238",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587817638458",
+      "previous_sibling": "handler_2_1587817637225"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587752335238",
+      "context": {
+        "Q13": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587752335243"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you felt as if the trauma was about to happen again?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1587752302613",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1587752302619",
+      "previous_sibling": "handler_3_1587752302619"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1587752302613",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587817477088",
+      "previous_sibling": "handler_5_1587817469143"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1587752302613",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1587817469143",
+      "previous_sibling": "handler_9_1587752302619"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1587752302613",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_4_1587817478480",
+      "previous_sibling": "handler_7_1587817477088"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1587752302613",
+      "context": {
+        "Q8": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587752302619"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q11",
+      "dialog_node": "slot_10_1587752322648",
+      "previous_sibling": "slot_2_1587752316899"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q19",
+      "dialog_node": "slot_9_1587752372486",
+      "previous_sibling": "slot_6_1587752367592"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q4",
+      "dialog_node": "slot_2_1587752281688",
+      "previous_sibling": "slot_6_1587752272734"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q16",
+      "dialog_node": "slot_6_1587752355817",
+      "previous_sibling": "slot_1_1587752348631"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q2",
+      "dialog_node": "slot_7_1587752234865",
+      "previous_sibling": "slot_5_1587751894984"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q17",
+      "conditions": "true",
+      "dialog_node": "slot_8_1587752361575",
+      "previous_sibling": "slot_6_1587752355817"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q14",
+      "dialog_node": "slot_8_1587752340568",
+      "previous_sibling": "slot_9_1587752335238"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q9",
+      "dialog_node": "slot_3_1587752308284",
+      "previous_sibling": "slot_4_1587752302613"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q15",
+      "dialog_node": "slot_1_1587752348631",
+      "previous_sibling": "slot_8_1587752340568"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q12",
+      "dialog_node": "slot_10_1587752329254",
+      "previous_sibling": "slot_10_1587752322648"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q10",
+      "dialog_node": "slot_2_1587752316899",
+      "previous_sibling": "slot_3_1587752308284"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q5",
+      "dialog_node": "slot_9_1587752286492",
+      "previous_sibling": "slot_2_1587752281688"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q13",
+      "dialog_node": "slot_9_1587752335238",
+      "previous_sibling": "slot_10_1587752329254"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1587750789241",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587751894176",
+      "previous_sibling": "handler_5_1587811152099"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q3",
+      "dialog_node": "slot_6_1587752272734",
+      "previous_sibling": "slot_7_1587752234865"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q6",
+      "dialog_node": "slot_5_1587752292776",
+      "previous_sibling": "slot_9_1587752286492"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q8",
+      "dialog_node": "slot_4_1587752302613",
+      "previous_sibling": "slot_10_1587752298124"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q1",
+      "dialog_node": "slot_5_1587751894984",
+      "previous_sibling": "handler_1_1587751894176"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q18",
+      "dialog_node": "slot_6_1587752367592",
+      "previous_sibling": "slot_8_1587752361575"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1587750789241",
+      "variable": "$Q7",
+      "dialog_node": "slot_10_1587752298124",
+      "previous_sibling": "slot_5_1587752292776"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "El numero no es correcto"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587750789241",
+      "conditions": "$Q1>5",
+      "event_name": "generic",
+      "dialog_node": "handler_5_1587811152099"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752340568",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1587817679542",
+      "previous_sibling": "handler_4_1587817678417"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752340568",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1587817678417",
+      "previous_sibling": "handler_9_1587752340576"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752340568",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1587817680585",
+      "previous_sibling": "handler_6_1587817679542"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you had trouble sleeping since the trauma ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752340568",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1587752340576",
+      "previous_sibling": "handler_2_1587752340576"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587752340568",
+      "context": {
+        "Q14": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_2_1587752340576"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752322648",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587817577791",
+      "previous_sibling": "handler_2_1587817568601"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you tried not to talk about the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752322648",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1587752322657",
+      "previous_sibling": "handler_6_1587752322657"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752322648",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1587817568601",
+      "previous_sibling": "handler_7_1587752322657"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752322648",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1587817582511",
+      "previous_sibling": "handler_7_1587817577791"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1587752322648",
+      "context": {
+        "Q11": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587752322657"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1587752308284",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1587817496434",
+      "previous_sibling": "handler_5_1587752308288"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1587752308284",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587817503006",
+      "previous_sibling": "handler_3_1587817496434"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Do you feel very upset when you are reminded of the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1587752308284",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1587752308288",
+      "previous_sibling": "handler_8_1587752308288"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1587752308284",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1587817509058",
+      "previous_sibling": "handler_2_1587817503006"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587752308284",
+      "context": {
+        "Q9": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587752308288"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752281688",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587815511284",
+      "previous_sibling": "handler_3_1587815510134"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "During or after the trauma, did you ever feel distant from your normal self or like you were watching it happen from outside?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752281688",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1587752281700",
+      "previous_sibling": "handler_3_1587752281700"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752281688",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1587815510134",
+      "previous_sibling": "handler_4_1587815509161"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1587752281688",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1587815509161",
+      "previous_sibling": "handler_9_1587752281700"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1587752281688",
+      "context": {
+        "Q4": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587752281700"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752329254",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1587817601337",
+      "previous_sibling": "handler_8_1587817600573"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752329254",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1587817600573",
+      "previous_sibling": "handler_5_1587817599403"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752329254",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1587817599403",
+      "previous_sibling": "handler_4_1587752329259"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you tried not to avoid situacions or people that remind you of the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752329254",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1587752329259",
+      "previous_sibling": "handler_1_1587752329259"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1587752329254",
+      "context": {
+        "Q12": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_1_1587752329259"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "During or after the trauma, did you ever feel in a daze?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1587752234865",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1587752234870",
+      "previous_sibling": "handler_5_1587752234870"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1587752234865",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1587815366576",
+      "previous_sibling": "handler_9_1587752234870"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1587752234865",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587815450295",
+      "previous_sibling": "handler_8_1587815438961"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1587752234865",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1587815438961",
+      "previous_sibling": "handler_3_1587815366576"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1587752234865",
+      "context": {
+        "Q2": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_5_1587752234870"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752286492",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1587815637047",
+      "previous_sibling": "handler_5_1587752286497"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752286492",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1587815874578",
+      "previous_sibling": "handler_6_1587815873233"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752286492",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1587815873233",
+      "previous_sibling": "handler_8_1587815637047"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you been unable to recall important aspects of the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752286492",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1587752286497",
+      "previous_sibling": "handler_8_1587752286497"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587752286492",
+      "context": {
+        "Q5": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587752286497"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ok, maybe later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1587751510877",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Anything else"
+      },
+      "conditions": "@Dicotomic:no",
+      "dialog_node": "response_2_1587751606865",
+      "previous_sibling": "response_10_1587751560324"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Let's go "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1587751510877",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1587826444883"
+      },
+      "conditions": "@Dicotomic:yes",
+      "dialog_node": "response_10_1587751560324"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752298124",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_4_1587817423866",
+      "previous_sibling": "handler_8_1587817417192"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752298124",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1587817417192",
+      "previous_sibling": "handler_2_1587752298128"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you had bad dreams or nightmares about the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752298124",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1587752298128",
+      "previous_sibling": "handler_4_1587752298128"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587752298124",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1587817434514",
+      "previous_sibling": "handler_4_1587817423866"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1587752298124",
+      "context": {
+        "Q7": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587752298128"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752372486",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1587817856687",
+      "previous_sibling": "handler_1_1587817855843"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752372486",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1587817854617",
+      "previous_sibling": "handler_5_1587752372490"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752372486",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1587817855843",
+      "previous_sibling": "handler_8_1587817854617"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "When you are reminded of the trauma, do you sweat or tremble or does your heart beat fast?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587752372486",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1587752372490",
+      "previous_sibling": "handler_4_1587752372490"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587752372486",
+      "context": {
+        "Q19": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587752372490"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752361575",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1587817790889",
+      "previous_sibling": "handler_10_1587817790029"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752361575",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1587817790029",
+      "previous_sibling": "handler_6_1587752361582"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752361575",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_4_1587817791597",
+      "previous_sibling": "handler_1_1587817790889"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have you become more alert to danger since the trauma?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587752361575",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587752361582",
+      "previous_sibling": "handler_7_1587752361582"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587752361575",
+      "context": {
+        "Q17": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_7_1587752361582"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587752292776",
+      "conditions": "@sys-number <1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_2_1587815984786",
+      "previous_sibling": "handler_6_1587815985628"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Perfect, next question"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587752292776",
+      "conditions": "@sys-number  <= 5 && @sys-number  >=1",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1587815945440",
+      "previous_sibling": "handler_6_1587752292780"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "number between 1 to 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587752292776",
+      "conditions": "@sys-number >5",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1587815985628",
+      "previous_sibling": "handler_6_1587815945440"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Have memories of the trauma kept entering your mind?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587752292776",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587752292780",
+      "previous_sibling": "handler_8_1587752292780"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587752292776",
+      "context": {
+        "Q6": "@sys-number"
+      },
+      "conditions": "@sys-number && @sys-number<= 5 && @sys-number>= 0",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587752292780"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1587820087530",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Instruccions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Answer the questions with a number from 1 to 5\n1 Not at all\n2 Midly\n3 Medium\n4 Quite a bit\n5 Very much"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1587750789241"
+      },
+      "dialog_node": "node_9_1587826444883",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Results",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The final result is $resultatFinal . "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "dialog_node": "node_3_1587820087530",
+      "previous_sibling": "node_6_1587750789241"
+    },
+    {
+      "type": "frame",
+      "title": "Form",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Congratulations! You have finished the test."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "resultatFinal": "<? $Q1 + $Q2 + $Q3 + $Q4 +$Q5 + $Q6+$Q7 + $Q8+$Q9+ $Q10+$Q11 + $Q12+$Q13 + $Q14+$Q15+ $Q16+$Q17 + $Q18+$Q19 ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1587820087530"
+      },
+      "dialog_node": "node_6_1587750789241",
+      "previous_sibling": "node_9_1587826444883"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. Do you want to know if you have ASDS?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "COnVIDa MVP copy",
+  "language": "en",
+  "description": ""
+}
