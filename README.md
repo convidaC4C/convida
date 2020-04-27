@@ -17,8 +17,7 @@ ConVIDA is designed using XX components:
 1. Node-Red.
 2. Cloud Foundry app.
 3. Watson Assistant.
-4. Cloudant database.
-5. Continous delivery.
+4. Continous delivery.
 
 ## How to implement ConVIDA
 
