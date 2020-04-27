@@ -36,7 +36,8 @@ See [ROADMAP.md](roadmap/roadmap.md)
 
 ## Acknowledgments
 
-<<<<<<<<< Who help us? >>>>>>>>
+* Kamala Prió
+* Carlos Lucas Rodríguez
 
 
 
