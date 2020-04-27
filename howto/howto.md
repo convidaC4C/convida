@@ -12,7 +12,7 @@ The manifest of the Webserver can be viewed [here](https://github.com/convidaC4C
 
 Follow the instructions of [this manual](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/README.md#set-up-an-instance-of-watson-assistant) until step 5.
 
-Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json)
+Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json).
 
 
 
