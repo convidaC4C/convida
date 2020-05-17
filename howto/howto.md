@@ -17,7 +17,7 @@ Then we have created a new skill to do a form based on the ASDS test, the json a
 
 ## Set up DB2 Database
 
-### Local db2 docker creation.
+### Local db2 docker creation
 __Step 1:__ Linux installation
 We have used an LTS version as it is a stable version of the Linux based Ubuntu operating system which is mainly aimed at enterprise level server environments.
 
@@ -45,4 +45,25 @@ We use the java jdk openjdk-11-jre-headless.
 Once the DB2 server is installed, we need a client with which to design the databases.
 We use dbeaver which we download [here](https://dbeaver.io/download/), download the debian image(Linux Debian package 64 bit (installer))
  
+ 
+### Use of dbeaver to design data ta
 
+### How to exporting table data to CSV format
+__Step 1:__ Select a table you want to export. In the context menu choose "Export Data".
+
+__Step 2:__ Choose export format. DBeaver support many different output formats including CSV, HTML, XLSX, etc
+
+__Step 3:__ Set data extraction options. This may affect extraction performance
+
+__Step 4:__ Set export format option. They are specific to the data format you choose on Step 2
+
+__Step 5:__ Set options for output files or clipboard
+
+__Step 6:__ Review what and to what format you will export
+
+__Step 7:__ Press finish. See extraction progress. 
+
+
+### DB2 instance creation in ibm cloud.
+
+### Importing tables to the DB2 instance in ibm cloud.
