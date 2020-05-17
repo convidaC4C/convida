@@ -46,7 +46,8 @@ Once the DB2 server is installed, we need a client with which to design the data
 We use dbeaver which we download [here](https://dbeaver.io/download/), download the debian image(Linux Debian package 64 bit (installer))
  
  
-### Use of dbeaver to design data ta
+### Use of dbeaver to design data tables
+
 
 ### How to exporting table data to CSV format
 __Step 1:__ Select a table you want to export. In the context menu choose "Export Data".
