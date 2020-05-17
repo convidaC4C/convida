@@ -14,17 +14,35 @@ Follow the instructions of [this manual](https://github.com/Call-for-Code/Soluti
 
 Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json).
 
+
 ## Set up DB2 Database
 
-...
+### Local db2 docker creation.
+__Step 1:__ Linux installation
+We have used an LTS version as it is a stable version of the Linux based Ubuntu operating system which is mainly aimed at enterprise level server environments.
+
+As well as having a lot of documentation and compatibility.
+Follow the instructions of [this manual](https://releases.ubuntu.com/18.04.4/)
+
+
+__Step 2:__ Install Docker Engine on Ubuntu
+Follow the instructions of [this manual](https://docs.docker.com/engine/install/ubuntu/)
+
+In Installation methods we have performed the installation using a repository.
+
+
+__Step 3:__ Download the DB2 DB image
+Follow the instructions of [this manual](https://hub.docker.com/_/db2-developer-c-edition)
+
+In section "Getting Db2 Developer-C image" we have used the image db2_developer_c:11.1.4.4-x86_64
 
 
 
+__Step 4:__ Install a DB client to connect to your DB2 instance
+We downloaded a java engine to make dbeaver work.
+We use the java jdk openjdk-11-jre-headless.
 
-
-
-
-
-
+Once the DB2 server is installed, we need a client with which to design the databases.
+We use dbeaver which we download [here](https://dbeaver.io/download/), download the debian image(Linux Debian package 64 bit (installer))
  
 
