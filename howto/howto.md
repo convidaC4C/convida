@@ -14,7 +14,9 @@ Follow the instructions of [this manual](https://github.com/Call-for-Code/Soluti
 
 Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json).
 
+## Set up DB2 Database
 
+...
 
 
 
