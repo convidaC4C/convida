@@ -68,3 +68,8 @@ __Step 7:__ Press finish. See extraction progress.
 ### DB2 instance creation in ibm cloud.
 
 ### Importing tables to the DB2 instance in ibm cloud.
+Follow the instructions of [this video](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-load_local) to load the data from our system
+
+### Watson connection to DB2 database
+We have created a Slackbot to create and search Db2 database entries.
+Follow the instructions of [this manual](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-slack-chatbot-database-watson#architecture)
