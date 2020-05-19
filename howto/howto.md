@@ -65,7 +65,7 @@ __Step 6:__ Review what and to what format you will export
 __Step 7:__ Press finish. See extraction progress. 
 
 
-### DB2 instance creation in ibm cloud.
+## DB2 instance creation in ibm cloud.
 
 ### Importing tables to the DB2 instance in ibm cloud.
 Follow the instructions of [this video](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-load_local) to load the data from our system
