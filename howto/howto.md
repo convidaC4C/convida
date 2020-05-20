@@ -68,7 +68,10 @@ __Step 7:__ Press finish. See extraction progress.
 ## DB2 instance creation in ibm cloud.
 
 ### Importing tables to the DB2 instance in ibm cloud.
-Follow the instructions of [this video](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-load_local) to load the data from our system
+Follow the instructions of [this video](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-load_local) to load the data from our system.
+Only well-formatted XML documents can be imported.
+
+We can select that the imported XML data be validated with a schema specified with the IMPORT command, against a schema identified by a schema location flag within the source XML document, or by the schema identified by the schema specifier. 
 
 ### Watson connection to DB2 database
 We have created a Slackbot to create and search Db2 database entries.
