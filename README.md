@@ -10,7 +10,9 @@ ConVIDA is designed using XX components:
 3. Convida Dialog.
 4. Database.
 
-![Convida technical solution](/technical_solution/technical_solution_Diagram)
+### Convida technical solution
+
+![Convida technical solution](/technical_solution/technical_solution_Diagram.png)
 
 1. The users open Convida web application.
 2. In Convida app, Watson assistant is available to do the test.
