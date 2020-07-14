@@ -1,6 +1,27 @@
 # ![ConVida Project](/images/convida_logo_200x200.png?raw=true)
 
-After COVID-19 crisis, we face a scenario never seen before, all of humanity has been exposed to general confinement and its differences in impact on people will be determined by individual conditions. Everyone will develop an acute stress picture, most without major affectation and with a quick adaptation. The rest of us will have difficulties to overcome the generated stress and this situation will lead to develop a post-traumatic stress disorder (PTSD). Post-traumatic stress disorder is a chronic serious mental illness that needs specialized care in order to overcome it.
+## Convid Crisis
+After the COVID-19 crisis, we face a scenario never seen before, given that all of humanity has been exposed to general confinement. All will develop an image of acute stress, most without major affectation and with a quick adaptation, but the rest of us will have difficulties to overcome the stress generated and this situation will lead to developing a post-traumatic stress disorder. Post-traumatic stress disorder is a chronic serious mental illness that needs specialized care to overcome it.
+
+We know that confinement causes negative psychological effects, such as stress, confusion, and discomfort. And this thinking of the general population, because there are risk groups, we know that, in healthcare personnel, for all that the Covid-19 entails, they are accumulating a lot of pressure, dedication and fatigue.
+
+
+
+## Solution
+Our proposal is to minimize people who get sick. For this we present ConVIDA, which is an acronym for (Control variables for the individual diagnosis of Asd (acute stress disorder), ConVIDA is an intelligent chatbot that simulates a real conversation to provide automatic responses to users. Its purpose is to help users people who have generated emotional distress or psychosocial problems triggered by confinement.
+
+ConVIDA will identify the specific problem by using the Acute Stress Disorder Scale (ASDS) test, which is used by psychologists, and provide you with the necessary treatments. ConVIDA will allow us to carry out a screening test to detect people at higher risk of developing post-traumatic stress disorder and to offer them more intensive care.
+Wide dissemination through social networks and easy access from any device will ensure that ConVIDA reaches a large number of people.
+
+
+## Benefit
+ConVIDA would improve the mental state of society and we will reduce the most important side effect of Covid-19 which is Health.
+COnVIDa will minimize the impact of Covid-19 on the mental health of the general population, while reducing spending on specialized care in national health systems. Furthermore, the team believes that if a functional version comes out in the end and the project is a success, it is easy to create new challenges and continue the project, since it is a problem that covers a lot and new functionalities can be proposed.
+
+I would like to emphasize that, in times of crisis, it is when people need information and answers. It is also when communication with real people is obstructed by causes of the crisis and by a wide need for information, and it is when chatbots are necessary.
+
+People who need professional help will identify in advance and can be helped sooner. COnVIDa, will also help health personnel, friends, colleagues, family members who develop acute stress in their immediate environment, since close people can also develop discomfort from the situation they are experiencing.
+
 
 ## Technical solution
 
