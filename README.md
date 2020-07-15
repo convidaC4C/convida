@@ -78,6 +78,19 @@ These indicators are units of measurement to generate dashboards for the study o
 
 Continuous delivery pipeline → It is a development tool that allows to automate the tests so that they can verify the updates of the applications in multiple dimensions before implementing them in the clients.
 
+## Work Methodology
+### Scrum
+Scrum it is an agile work methodology that aims to deliver value in short periods of time and for this it is based on three pillars: transparency, inspection and adaptation. This allows the customer, together with their sales team, to get the product to market quickly, quickly.
+
+### Microsoft Teams 
+Microsoft Teams is based on Office 365 Groups and allows collaboration between people from the same team or the development of a specific project, sharing resources and the main function is constant communication between team members.
+
+### GitHub
+GitHub is a collaborative development platform to host projects using the Git version control system.
+1. Tracking versions: GitHub makes it easy to keep track of all versions and changes, in addition to keeping track of revisions.
+2. Compatibility: Thanks to being cross-platform, it can be used to create local repositories on all operating systems: Windows, Linux or Mac.
+
+
 ## How to implement ConVIDA
 
 See [HOWTO.md](howto/howto.md)
