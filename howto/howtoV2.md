@@ -17,7 +17,7 @@ Follow the instructions of [this manual](https://github.com/Call-for-Code/Soluti
 Follow the instruccions of [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started) to build a dialog skill
 
 In the dialog skill we create intents. Intents are purposes or goals that are expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Watson Assistant service can choose the correct dialog flow for responding to it.
-We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-intents#:~:text=Intents%20are%20purposes%20or%20goals,flow%20for%20responding%20to%20it.) Also we create entities, which represent information in the user input that is relevant to the user's purpose. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-entities).
+We follow [this manual] to create intents. (https://cloud.ibm.com/docs/assistant?topic=assistant-intents#:~:text=Intents%20are%20purposes%20or%20goals,flow%20for%20responding%20to%20it.) Also we create entities, which represent information in the user input that is relevant to the user's purpose. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-entities) to create entities.
 
 
 Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json).
