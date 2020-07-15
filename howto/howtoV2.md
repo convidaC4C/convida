@@ -88,8 +88,8 @@ Follow the instructions of [this manual](https://cloud.ibm.com/docs/solution-tut
 
 ## Use Cloud Functions to insert and read data from Db2
 
-Before we had to keep the variables to insert and we follow [this manual]( https://github.com/IBM-Cloud/watson-conversation-variables )
-In Cloud functions we create the necessary querys to implement COnVIDa, which are: findUser, insrtUser, insertTest. We follow [this manual]( https://www.db2tutorial.com/db2-basics/db2-insert/ ) to create the querys.
+Before we had to store the variables in Watson Assistant to insert the data to Db2. We follow [this manual]( https://github.com/IBM-Cloud/watson-conversation-variables ) to 
+store the variables in Watson Assistant. In Cloud functions we create the necessary querys to implement COnVIDa, which are: findUser, insrtUser, insertTest. We follow [this manual]( https://www.db2tutorial.com/db2-basics/db2-insert/ ) to create the querys.
 We connect watson Assistant with function by a Webhook. A webhook is a mechanism that allows you to call an external program based on something that is happening in your program. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks) to know how webhooks works.
 
 
