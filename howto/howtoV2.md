@@ -17,7 +17,7 @@ Follow the instructions of [this manual](https://github.com/Call-for-Code/Soluti
 Follow the instruccions of [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started) to build a dialog skill
 
 In the dialog skill we create intents. Intents are purposes or goals that are expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Watson Assistant service can choose the correct dialog flow for responding to it.
-We follow [this manual] to create intents. (https://cloud.ibm.com/docs/assistant?topic=assistant-intents#:~:text=Intents%20are%20purposes%20or%20goals,flow%20for%20responding%20to%20it.) Also we create entities, which represent information in the user input that is relevant to the user's purpose. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-entities) to create entities.
+We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-intents#:~:text=Intents%20are%20purposes%20or%20goals,flow%20for%20responding%20to%20it.)  to create intents. Also we create entities, which represent information in the user input that is relevant to the user's purpose. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-entities) to create entities.
 
 
 Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json).
@@ -90,6 +90,6 @@ Follow the instructions of [this manual](https://cloud.ibm.com/docs/solution-tut
 
 Before we had to keep the variables to insert and we follow [this manual]( https://github.com/IBM-Cloud/watson-conversation-variables )
 In Cloud functions we create the necessary querys to implement COnVIDa, which are: findUser, insrtUser, insertTest. We follow [this manual]( https://www.db2tutorial.com/db2-basics/db2-insert/ ) to create the querys.
-We connect watson Assistant with function by a Webhook. A webhook is a mechanism that allows you to call an external program based on something that is happening in your program. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
+We connect watson Assistant with function by a Webhook. A webhook is a mechanism that allows you to call an external program based on something that is happening in your program. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks) to know how webhooks works.
 
 
