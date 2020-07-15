@@ -76,3 +76,28 @@ We can select that the imported XML data be validated with a schema specified wi
 ### Watson connection to DB2 database
 We have created a Slackbot to create and search Db2 database entries.
 Follow the instructions of [this manual](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-slack-chatbot-database-watson#architecture)
+
+
+## dashboard
+
+It is a graphical representation of the main indicators (KPIs) involved in achieving business objectives, and is oriented to decision-making to optimize the company's strategy.
+A dashboard must transform data into information and it into knowledge for business.
+
+### Visualization
+The person making the decisions must be able to interpret all the information they are seeing. So the dashboard should be short, speak the same decision language and its graphical representation the right one for the data it represents and visual enough to make your study appealing.
+
+KPIs: Key Performance Indicators (KPIs) are indicators that help us measure and quantify our work, having previously defined objectives and activities that help us achieve these goals.
+
+
+### Results
+Once several questionnaires have been carried out by users, the results can be seen on the graph in the administrator portal using the different KPIs chosen
+
+In the first dashboard we obtain the total score that each user has from the test performed.
+This KPI was requested since the application does not yet cover a large number of users, in a more advanced version it will be modified to new needs.
+
+The Acute Stress Disorder Scale (ASDS) is divided into 4 subscales.
+In the second dashboard it shows us the percentage of each one.
+Each question is aimed at determining the severity of each subscale in the patient in question.
+When the test ends, each subscale has a score.
+This graph measures in percentage each of the subscales in all the tests performed.
+
