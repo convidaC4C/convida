@@ -23,6 +23,25 @@ I would like to emphasize that, in times of crisis, it is when people need infor
 People who need professional help will identify in advance and can be helped sooner. COnVIDa, will also help health personnel, friends, colleagues, family members who develop acute stress in their immediate environment, since close people can also develop discomfort from the situation they are experiencing.
 
 
+## Technology
+### IBM Watson Assistant 
+IBM Watson Assistant is a white label cloud service that enables enterprise-level software developers to incorporate an artificial intelligence (AI) virtual assistant (VA) into the software they are developing and mark the assistant as their own.
+With the IBM Watson Assistant, we can create conversation interfaces on any application, device or channel.
+
+#### Why Watson Assistant?
+1. Closer to customers
+You have the flexibility to deploy Watson Assistant on your site, in a mobile app, on the phone, and in customer service tools. Supports 13 languages.
+2. Easy deployment
+You have the option to run on the IBM Cloud or on third-party clouds, including Amazon, Google, and Microsoft, as well as on-premises.
+
+#### IBM Db2 database
+The IBM Db2 database is a relational database that provides advanced data analysis and management capabilities for a transactional transaction log.
+The operational operations database is designed to offer an alternative service, mandatory elements, reliability and data availability, a system more compatible with Linux, Unix and Windows operating systems.
+
+### Cloud Foundry
+Cloud Foundry is a platform-with-services (PaaS) system that ensures the fastest, easiest and most reliable deployment of native native applications. Cloud Foundry guarantees that the aspects of creation and deployment of coding are mantinguin coordinats amb cura amb els serveis adjunts, producing a fast, consistent and reliable iteration of applications.
+
+
 ## Technical solution
 
 ConVIDA is designed using XX components:
@@ -81,6 +100,16 @@ Continuous delivery pipeline → It is a development tool that allows to automat
 ## Work Methodology
 ### Scrum
 Scrum it is an agile work methodology that aims to deliver value in short periods of time and for this it is based on three pillars: transparency, inspection and adaptation. This allows the customer, together with their sales team, to get the product to market quickly, quickly.
+
+##### It is characterized by:
+Adopt an incremental development strategy, rather than complete product planning and execution.
+Basing the quality of the result more on the tacit knowledge of the people in self-organized teams, than on the quality of the processes used.
+Overlap the different stages of development, instead of performing one after the other in a sequential cycle or cascade.
+
+#### Sprint
+A Sprint is the period in which the work itself is carried out.
+It is recommended that the duration of the sprints be constant and defined by the team based on their own experience.
+
 
 ### Microsoft Teams 
 Microsoft Teams is based on Office 365 Groups and allows collaboration between people from the same team or the development of a specific project, sharing resources and the main function is constant communication between team members.
