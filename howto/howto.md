@@ -92,6 +92,8 @@ KPIs: Key Performance Indicators (KPIs) are indicators that help us measure and 
 ### Results
 Once several questionnaires have been carried out by users, the results can be seen on the graph in the administrator portal using the different KPIs chosen
 
+![Convida Medical Portal solution](/images/Dashboard_medicalPortal.JPG)
+
 In the first dashboard we obtain the total score that each user has from the test performed.
 This KPI was requested since the application does not yet cover a large number of users, in a more advanced version it will be modified to new needs.
 
