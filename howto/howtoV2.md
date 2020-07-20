@@ -83,9 +83,7 @@ __Step 2:__ Open the instance and click the option 'Open Console'
 
 __Step 3:__ Open the menu that you find at the top left of screen and click the option 'Run Sql'
 
-__Step 4:__ There you can choose some templates but you can choose empty because you have the script done
-
-__Step 5:__ Finally copy your script and click execute. Here[https://github.com/convidaC4C/convida/blob/master/howto/ScriptDB] you will find the our script
+__Step 4:__ Finally copy your script and click execute. Here[https://github.com/convidaC4C/convida/blob/master/howto/ScriptDB] you will find the our script
 
 ## DB2 instance creation in ibm cloud.
 
