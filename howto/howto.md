@@ -88,6 +88,12 @@ The person making the decisions must be able to interpret all the information th
 
 KPIs: Key Performance Indicators (KPIs) are indicators that help us measure and quantify our work, having previously defined objectives and activities that help us achieve these goals.
 
+#### ConvidaMedicalPortal
+The platform where the ConvidaMedicalPortal application is located is at [this link](https://cloud.ibm.com/developer/appservice/apps/841ac4e4-4095-436a-9a15-42c79c2e9b7e)
+
+Application url at [this link](https://convida-medicalportal.eu-gb.mybluemix.net)
+
+source code at [this link](https://eu-de.git.cloud.ibm.com/convida.c4c/ConvidaMedicalPortal)
 
 ### Results
 Once several questionnaires have been carried out by users, the results can be seen on the graph in the administrator portal using the different KPIs chosen
