@@ -16,8 +16,10 @@ Follow the instructions of [this manual](https://github.com/Call-for-Code/Soluti
 
 Follow the instruccions of [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started) to build a dialog skill
 
-In the dialog skill we create intents. Intents are purposes or goals that are expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Watson Assistant service can choose the correct dialog flow for responding to it.
-We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-intents#:~:text=Intents%20are%20purposes%20or%20goals,flow%20for%20responding%20to%20it.)  to create intents. Also we create entities, which represent information in the user input that is relevant to the user's purpose. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-entities) to create entities.
+In the dialog skill we create intents. Intents are purposes or goals that are expressed in a customer's input, such as answering a question or processing a bill payment. 
+We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-intents#:~:text=Intents%20are%20purposes%20or%20goals,flow%20for%20responding%20to%20it.)  to create intents.
+
+Also we create entities, which represent information in the user input that is relevant to the user's purpose. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-entities) to create entities.
 
 
 Then we have created a new skill to do a form based on the ASDS test, the json associated is this [skill-COnVIDa-MVP](skill-COnVIDa-MVP-copy.json).
@@ -73,6 +75,18 @@ __Step 6:__ Review what and to what format you will export
 __Step 7:__ Press finish. See extraction progress. 
 
 
+### How to import script to DB2
+
+__Step 1:__ Create the instance DB2.
+
+__Step 2:__ Open the instance and click the option 'Open Console'
+
+__Step 3:__ Open the menu that you find at the top left of screen and click the option 'Run Sql'
+
+__Step 4:__ There you can choose some templates but you can choose empty because you have the script done
+
+__Step 5:__ Finally copy your script and click execute. Here[https://github.com/convidaC4C/convida/blob/master/howto/ScriptDB] you will find the our script
+
 ## DB2 instance creation in ibm cloud.
 
 ### Importing tables to the DB2 instance in ibm cloud.
@@ -88,8 +102,9 @@ Follow the instructions of [this manual](https://cloud.ibm.com/docs/solution-tut
 
 ## Use Cloud Functions to insert and read data from Db2
 
-Before we had to store the variables in Watson Assistant to insert the data to Db2. We follow [this manual]( https://github.com/IBM-Cloud/watson-conversation-variables ) to 
+Before insert data to DB2 we had to store the variables in Watson Assistant. We follow [this manual]( https://github.com/IBM-Cloud/watson-conversation-variables ) to 
 store the variables in Watson Assistant. In Cloud functions we create the necessary querys to implement COnVIDa, which are: findUser, insrtUser, insertTest. We follow [this manual]( https://www.db2tutorial.com/db2-basics/db2-insert/ ) to create the querys.
-We connect watson Assistant with function by a Webhook. A webhook is a mechanism that allows you to call an external program based on something that is happening in your program. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks) to know how webhooks works.
+
+We connect watson Assistant with Cloud function by a Webhook. A webhook is a mechanism that allows you to call an external program based on something that is happening in your program. We follow [this manual](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks) to know how webhooks works.
 
 
